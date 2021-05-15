@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial Laboratorio - Mengassini</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funciones.js"></script>
+</head>
+<body>
+    <div id="divGeneral">
+        <div id="divSpinner" class="spinner" hidden>
+        </div>
+            <div id="divTabla">
+                <table id="tabla">
+                    <caption>Datos de Materias</caption>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Cuatrimestre</th>
+                            <th>Fecha final</th>
+                            <th>Turno</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tcuerpo"></tbody>
+                </table>
+            </div>
+    </div>
+
+    <div id="divMateria" hidden>
+        <input type="button" value="X" id="btnCerrar" class="btn">
+        <br>
+        <label for="txtNombre">Nombre</label>
+        <br>
+        <input type="text" name="txtNombre" id="txtNombre">
+        <br>
+        <label for="txtCuatrimestre">Cuatrimestre</label>
+        <br>
+        <select name="slctCuatrimestre" id="slctCuatrimestre">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br>
+        <label for="txtFecha">Fecha final</label>
+        <br>
+        <input type="date" name="dtFecha" id="dtFecha">
+        <br>
+        <label for="rdoTurno">Turno</label>
+        <br>
+        <input type="radio" name="turno" id="mañana" value="mañana">
+        <label for="turno">Mañana</label>
+        <br>
+        <input type="radio" name="turno" id="noche" value="noche">
+        <label for="turno">Noche</label>
+        <br>
+        <input type="button" value="Eliminar" id="btnEliminar" class="btn">
+        <input type="button" value="Modificar" id="btnModificar" class="btn">
+    </div>
+    
+</body>
+</html>
